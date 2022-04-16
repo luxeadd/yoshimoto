@@ -30,6 +30,9 @@
   <meta name="robots" content="noindex">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./js/script.js"></script>
@@ -41,7 +44,7 @@
       <div class="p-header__main">
         <!-- ヘッダーロゴ -->
         <h1 class="p-header__logo">
-          <a href="#">
+          <a href="">
             <span class="p-header__title">ヨシモト</span>
             <img class="logo" src="./images/common/logo.svg" alt="タイトルロゴ">
             <span class="p-header__sub-title">塗装・吹付・防水</span><!-- /.p-header__sub-title -->
@@ -50,9 +53,9 @@
         <!-- メニュー -->
         <nav class="p-header__pc-menu p-header-menu ">
           <ul class="p-header-menu__items">
-            <li class="p-header-menu__item"><a href="">事業内容</a></li><!-- /.pc-menu__item -->
-            <li class="p-header-menu__item"><a href="">施工事例</a></li><!-- /.pc-menu__item -->
-            <li class="p-header-menu__item"><a href="">会社紹介</a></li><!-- /.pc-menu__item -->
+            <li class="p-header-menu__item"><a href="#about">事業内容</a></li><!-- /.pc-menu__item -->
+            <li class="p-header-menu__item"><a href="#case">施工事例</a></li><!-- /.pc-menu__item -->
+            <li class="p-header-menu__item"><a href="#company">会社紹介</a></li><!-- /.pc-menu__item -->
           </ul><!-- /.pc-menu__items -->
         </nav><!-- /.header__menu -->
       </div><!-- /.p-header__main -->
@@ -89,10 +92,29 @@
   <!-- mv -->
   <div class="p-mv js-mv">
     <div class="p-mv__img">
-      <picture>
-        <source srcset="./images/common/mv.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
-        <img src="./images/common/mv.jpg" alt="MV画像">
-      </picture>
+      <!-- ここでwidth heightを設定しておくこと -->
+      <div class="swiper p-mv-slider js-mv-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/mv.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/mv.jpg" alt="MV画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/mv2.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/mv2.jpg" alt="MV画像">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="./images/common/mv3.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
+              <img src="./images/common/mv3.jpg" alt="MV画像">
+            </picture>
+          </div>
+        </div>
+      </div>
     </div><!-- /.p-mv__img -->
     <div class="p-mv__content">
       <h2 class="p-mv__text">
@@ -102,7 +124,7 @@
     </div><!-- /.p-mv__content -->
   </div><!-- /.p-mv -->
   <!-- 事業内容 -->
-  <section class="l-layout p-about">
+  <section id="about" class="l-layout p-about">
     <div class="l-inner">
       <div class="p-about__contents">
         <div class="p-about__img">
@@ -127,7 +149,7 @@
     </div><!-- /.l-inner -->
   </section><!-- /.p-about -->
   <!-- 施工事例 -->
-  <section class="l-layout p-case">
+  <section id="case" class="l-layout p-case">
     <div class="l-inner">
       <div class="p-case__title">
         <!-- セクションタイトル -->
@@ -173,7 +195,7 @@
     </div><!-- /.l-inner -->
   </section><!-- /.l-case p-case -->
   <!-- 会社紹介 -->
-  <section class="l-layout p-company">
+  <section id="company" class="l-layout p-company">
     <div class="l-inner">
       <div class="p-company__title">
         <!-- セクションタイトル -->

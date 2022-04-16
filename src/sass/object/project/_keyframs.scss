@@ -1,0 +1,25 @@
+@use 'global' as * ; 
+
+//各ページ全体fadeIn
+body {
+  opacity: 0;
+  animation : loader-fadeOut 2s;
+  animation-fill-mode: both;
+  animation-timing-function:ease;/*アニメーションの進行具合*/
+}
+
+@keyframes loader-fadeOut {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leftSlide{
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}

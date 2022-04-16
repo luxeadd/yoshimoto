@@ -16,9 +16,11 @@
   position: absolute;
   right: calc(90 / 1280) * 100vw;
   bottom: calc(206 / 1280) * 100vh;
-  background: $white;
+  background: rgba($color: $white, $alpha: 0.9);
+  border-radius: rem(90);
   padding: rem(10) rem(30);
-  border-radius: 93px;
+  
+  z-index: 10;
   
   @include mq(tab) {
     padding: rem(27) rem(60);
@@ -38,6 +40,27 @@
 
 .p-mv__text span { 
   display: inline-block;
+  position: relative;
+
+  
+}
+
+.p-mv__text span::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
   background: linear-gradient(to bottom, transparent 60%, $color-title-back 80%, );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  animation-name: leftSlide;/*アニメーション名*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.7s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
 
 }
