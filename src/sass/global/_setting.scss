@@ -16,8 +16,7 @@ $padding-sp: 20px;
 ////////////////////
 // フォント設定
 ////////////////////
-
-$base-font-family: "";
+$base-font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 $second-font-family: "";
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -35,8 +34,18 @@ $bold: 700;
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+$black: #333;
 $white: #fff;
+$color-main: #333;
+$color-accent: #13672D;
+$color-title-back: #139F3E;
+$color-title-back: #139F3E;
+$color-back: #F5F2F2;
+
+
+body {
+  color: $color-main;
+}
 
 //z-index
 $z-index-header: 100;

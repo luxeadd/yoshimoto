@@ -1,17 +1,14 @@
 @use 'global' as * ; 
 
 .p-header-menu {
-  display: none;
-
-  @include mq(tab) {
-     display: block;
-  }
+ 
 }
 
 .p-header-menu__items {
   display: flex;
   height: inherit;
-  align-items: center;
+  align-items: center; 
+  justify-content: center;
 
 }
 
@@ -21,7 +18,26 @@ height: inherit;
 }
 
 .p-header-menu__item + .p-header-menu__item {
-margin-left: rem(30);
+  position: relative;
+}
+
+.p-header-menu__item + .p-header-menu__item::before {
+  content: "";
+  display: block;
+  width: rem(1);
+  height: rem(15);
+  background-color: $color-main;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  
+  @include mq(tab) {
+    height: rem(30);
+    
+  }
+  
+
 }
 
 .p-header-menu__item a {
@@ -32,5 +48,11 @@ margin-left: rem(30);
   align-items: center;
   position: relative;
   text-decoration: none;
+  padding:  0 rem(15);
+  
+  @include mq(tab) {
+    padding:  0 rem(38);
+    
+  }
 
 }

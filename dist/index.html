@@ -19,6 +19,8 @@
   <meta name="twitter:card" content="summary or summary_large_image">
   <meta name="twitter:site" content="@ユーザー名">
   <meta name="format-detection" content="telephone=no">
+  <!-- 自動リンクを無効にする -->
+  <!-- <meta name="format-detection" content="telephone=no"> -->
   <!-- タッチアイコン -->
   <link rel="apple-touch-icon" sizes="192x192" href="">
   <link rel="shortcut icon" sizes="192x192" href="">
@@ -35,39 +37,39 @@
 <body>
   <header class="l-header p-header js-header">
     <div class="p-header__inner">
-      <!-- ヘッダーロゴ  トップページのみh1タグ-->
-      <h1 class="p-header__logo">
-        <a href="">
-          <img class="logo" src="" alt="タイトルロゴ">
-        </a>
-      </h1><!-- /.header__logo -->
-      <!-- ドロワーアイコン  -->
-      <button type="button" id="js-hamburger" class="p-header__drawer c-hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
-        <span class="c-hamburger__line"></span>
-      </button>
-      <!-- ドロワーメニュー -->
-      <div class=" p-header__drawer-menu  p-drawer-menu" id="js-drawer-menu" area-hidden="true">
-        <ul class="p-drawer-menu__items">
-          <li id="js-drawer-menu__item" class="p-drawer-menu__item  "><a href="">リスト</a></li>
-          <li id="js-drawer-menu__item" class="p-drawer-menu__item"><a href="">リスト</a></li>
-          <li id="js-drawer-menu__item" class="p-drawer-menu__item"><a href="">リスト</a></li>
-          <li id="js-drawer-menu__item" class="p-drawer-menu__item"><a href="">リスト</a></li>
-        </ul>
-      </div><!-- /.p-header-menu -->
-      <!-- pcーメニュー -->
-      <nav class="p-header__pc-menu p-header-menu ">
-        <ul class="p-header-menu__items">
-          <li class="p-header-menu__item"><a href="">お知らせ</a></li><!-- /.pc-menu__item -->
-          <li class="p-header-menu__item"><a href="">事業内容</a></li><!-- /.pc-menu__item -->
-          <li class="p-header-menu__item"><a href="">制作実績</a></li><!-- /.pc-menu__item -->
-          <li class="p-header-menu__item"><a href="">企業概要</a></li><!-- /.pc-menu__item -->
-          <li class="p-header-menu__item"><a href="">ブログ</a></li><!-- /.pc-menu__item -->
-        </ul><!-- /.pc-menu__items -->
-      </nav><!-- /.header__menu -->
-      <!-- ドロワーメニュー展開時背景 -->
-      <div class="p-header__overlay" id="js-header__overlay"></div>
+      <div class="p-header__main">
+        <!-- ヘッダーロゴ -->
+        <h1 class="p-header__logo">
+          <a href="#">
+            <span class="p-header__title">ヨシモト</span>
+            <img class="logo" src="./images/common/logo.svg" alt="タイトルロゴ">
+            <span class="p-header__sub-title">塗装・吹付・防水</span><!-- /.p-header__sub-title -->
+          </a>
+        </h1><!-- /.header__logo -->
+        <!-- メニュー -->
+        <nav class="p-header__pc-menu p-header-menu ">
+          <ul class="p-header-menu__items">
+            <li class="p-header-menu__item"><a href="">事業内容</a></li><!-- /.pc-menu__item -->
+            <li class="p-header-menu__item"><a href="">施工事例</a></li><!-- /.pc-menu__item -->
+            <li class="p-header-menu__item"><a href="">会社紹介</a></li><!-- /.pc-menu__item -->
+          </ul><!-- /.pc-menu__items -->
+        </nav><!-- /.header__menu -->
+      </div><!-- /.p-header__main -->
+      <div class="p-header__sub p-header-contact">
+        <div class="p-header-contact__text">お問い合わせはこちら</div><!-- /.p-header__contact-text -->
+        <div class="p-header-contact__tel">
+          <a href="tel:+81-90-2706-7535">
+            <div class="p-header-contact__img">
+              <img src="./images/common/tel-icon.png" alt="" class="p-header-contact__tel-icon">
+            </div><!-- /.p-header-contact__img -->
+            <div class="p-header-contact__tel-number">090-2706-7535</div><!-- /.p-header-contact__tel-number -->
+          </a>
+        </div><!-- /.p-header__contact-tel -->
+      </div><!-- /.p-header__contact -->
     </div><!-- /.header__inner -->
   </header>
+  <div class="p-sp-contact">
+  </div><!-- /.p-sp-contact -->
   <div class="footer">
   </div>
 </body>

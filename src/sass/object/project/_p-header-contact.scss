@@ -1,0 +1,27 @@
+@use 'global' as * ; 
+
+.p-header-contact {
+}
+
+.p-header-contact__text {
+  font-size: rem(30);
+}
+
+.p-header-contact__tel {
+  
+}
+
+.p-header-contact__tel a {
+  display: flex;
+  align-items: center;
+}
+
+.p-header-contact__img{
+  width: rem(37);
+}
+
+.p-header-contact__tel-number{
+  font-size: rem(35);
+  font-weight: $bold;
+  margin-left: rem(5);
+}
