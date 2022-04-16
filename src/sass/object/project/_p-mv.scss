@@ -15,7 +15,7 @@
 .p-mv__content{
   position: absolute;
   right: calc(90 / 1280) * 100vw;
-  bottom: calc(206 / 1280) * 100vh;
+  bottom: 30%;
   background: rgba($color: $white, $alpha: 0.9);
   border-radius: rem(90);
   padding: rem(10) rem(30);
@@ -24,6 +24,7 @@
   
   @include mq(tab) {
     padding: rem(27) rem(60);
+    bottom: calc(206 / 1280) * 100vh;
     
   }
 
