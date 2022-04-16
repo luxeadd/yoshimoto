@@ -2,16 +2,180 @@
 <html lang="ja">
 <%- include('./common/_head') %>
 <body>
+  <!-- ヘッダー -->
   <%- include('./common/_header') %>
  
+  <!-- コンタクト SPのみ展開 -->
   <div class="l-sp-contact p-sp-contact">
     <%- include('./common/_p-contact') %>
   </div><!-- /.p-sp-contact -->
 
+  <!-- mv -->
+  <div class="p-mv js-mv">
+     <div class="p-mv__img">
+      <picture>
+        <source srcset="./images/common/mv.jpg" media="(min-width: 768px)"/><!-- 幅768px以上なら表示 -->
+        <img src="./images/common/mv.jpg" alt="MV画像">
+      </picture>
+     </div><!-- /.p-mv__img -->
+      <div class="p-mv__content">
+        <h2 class="p-mv__text">
+          <span>地域密着</span><br>
+          <span >あなたの街の塗装会社</span>
+        </h2><!-- /.p-mv__text -->
+      </div><!-- /.p-mv__content -->
+  </div><!-- /.p-mv -->
+
+  <!-- 事業内容 -->
+  <section class="l-layout p-about">
+    <div class="l-inner">
+      <div class="p-about__contents">
+        <div class="p-about__img">
+          <img src="./images/common/about-img.jpg" alt="事業内容イメージ">
+        </div><!-- /.p-about__img -->
+        <div class="p-content__text-box">
+          <div class="p-content__title">
+            <!-- セクションタイトル -->
+            <%- include('./parts/_p-section-title',{title:' 事業内容 '}) %>
+          </div><!-- /.p-content__title -->
+            <div class="p-content__texts">
+              <div class="p-content__sub-title c-title">・塗装工事業</div><!-- /.p-content__text c-text -->
+              <div class="p-content__text c-text">塗料や塗材などの吹き付けや塗り付け、はり付けを行います</div><!-- /.p-content__text c-text -->
+              <div class="p-content__sub-title c-title">・建設工事業</div><!-- /.p-content__text c-text -->
+              <div class="p-content__text c-text">総合的な企画、指導、調整のもとに建築物を建設します</div><!-- /.p-content__text c-text -->
+              <div class="p-content__sub-title c-title">・防水工事業</div><!-- /.p-content__text c-text -->
+              <div class="p-content__text c-text">アスファルト、モルタル、シーリング材等によって防水を行います</div><!-- /.p-content__text c-text -->
+            </div><!-- /.p-content__texts -->
+            <div class="p-content__copy">お客様目線に立った高品質で<br>確かな外壁塗装を行います</div><!-- /.p-content__copy -->
+          </div><!-- /.p-content__text-box -->
+        </div><!-- /.p-about__contents -->
+    </div><!-- /.l-inner -->
+  </section><!-- /.p-about -->
+
+<!-- 施工事例 -->
+  <section class="l-layout p-case">
+    <div class="l-inner">
+      <div class="p-case__title">
+        <!-- セクションタイトル -->
+        <%- include('./parts/_p-section-title',{title:' 施工事例 '}) %>
+      </div><!-- /.p-case-title -->
+      <div class="p-case__sub-title">これまで請け負ってきた<br class="u-mobile">塗装工事の実績</div><!-- /.p-case__sub-title -->
+      <div class="p-case__contents">
+
+        <article class="p-case__content">
+          <h3 class="p-case__content-title">岸和田市　H工業様　倉庫</h3><!-- /.p-case__content-title -->
+          <div class="p-case__content-items">
+
+            <div class="p-case__content-item">
+              <div class="p-case__content-item-img">
+                <img src="./images/common/case1-before.jpg" alt="岸和田市H工業様倉庫before">
+              </div><!-- /.p-case__content-item-img -->
+              <div class="p-case__content-item-text">Before</div><!-- /.p-case__content-item-text -->
+            </div><!-- /.p-case__content-item -->
+
+            <div class="p-case__content-item">
+              <div class="p-case__content-item-img">
+                <img src="./images/common/case1-after.jpg" alt="岸和田市H工業様倉庫after">
+              </div><!-- /.p-case__content-item-img -->
+              <div class="p-case__content-item-text">After</div><!-- /.p-case__content-item-text -->
+            </div><!-- /.p-case__content-item -->
+
+          </div><!-- /.p-case__content-items -->
+        </article><!-- /.p-case__content -->
 
 
+        <article class="p-case__content">
+          <h3 class="p-case__content-title">貝塚市　M様邸</h3><!-- /.p-case__content-title -->
+          <div class="p-case__content-items">
+
+            <div class="p-case__content-item">
+              <div class="p-case__content-item-img">
+                <img src="./images/common/case2-before.jpg" alt="貝塚市　M様邸before">
+              </div><!-- /.p-case__content-item-img -->
+              <div class="p-case__content-item-text">Before</div><!-- /.p-case__content-item-text -->
+            </div><!-- /.p-case__content-item -->
+
+            <div class="p-case__content-item">
+              <div class="p-case__content-item-img">
+                <img src="./images/common/case2-after.jpg" alt="貝塚市　M様邸after">
+              </div><!-- /.p-case__content-item-img -->
+              <div class="p-case__content-item-text">After</div><!-- /.p-case__content-item-text -->
+            </div><!-- /.p-case__content-item -->
+
+          </div><!-- /.p-case__content-items -->
+        </article><!-- /.p-case__content -->
 
   
+
+      </div><!-- /.p-case__contents -->
+    </div><!-- /.l-inner -->
+  </section><!-- /.l-case p-case -->
+
+ 
+<!-- 会社紹介 -->
+  <section class="l-layout p-company">
+    <div class="l-inner">
+      <div class="p-company__title">
+        <!-- セクションタイトル -->
+        <%- include('./parts/_p-section-title',{title:' 会社紹介 '}) %>
+      </div><!-- /.p-company__title -->
+      <div class="p-company__contents">
+        
+        <div class="p-company__leader">
+          <div class="p-company__leader-title">
+            <span>代表</span>芳本　元男
+          </div><!-- /.p-company__leader-title -->
+          <ul class="p-company__leder-lists">
+            <li class="p-company__leader-list">一級塗装技能士</li><!-- /.p-company__list -->
+            <li class="p-company__leader-list">二級建築士</li><!-- /.p-company__list -->
+            <li class="p-company__leader-list">乙四危険物取扱者</li><!-- /.p-company__list -->
+            <li class="p-company__leader-list">二級建築施工管理技士</li><!-- /.p-company__list -->
+            <li class="p-company__leader-list">足場作業主任者</li><!-- /.p-company__list -->
+            <li class="p-company__leader-list">準看護師有資格者</li><!-- /.p-company__list -->
+          </ul><!-- /.p-company__leder-lists -->
+        </div><!-- /.p-company__leader -->
+
+        <div class="p-company__content">
+          <ul class="p-company__lists">
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">会社名</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">株式会社ヨシモト</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">事業内容</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">塗装・吹付・防水</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">所在地</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">貝塚市三ツ松1333</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">資本金</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">1,000万円</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">電話番号</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">0120-561-113</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+            <li class="p-company__list">
+              <div class="p-company__list-title c-title">携帯番号</div><!-- /.p-company__list-title -->
+              <div class="p-company__list-text">090-2706-7535</div><!-- /.p-company__list-text -->
+            </li><!-- /.company__list -->
+           
+          </ul><!-- /.company__lists -->
+        </div><!-- /.p-company__content -->
+        
+      </div><!-- /.p-company__contents -->
+    </div><!-- /.l-inner -->
+  </section><!-- /.l-company p-company -->
+  
+ <div class="p-map">
+   <div class="p-map__iframe">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.738287841932!2d135.37988915098825!3d34.407997406249734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ced04831e2a1%3A0xafb897d691a74768!2z44CSNTk3LTAwNDUg5aSn6Ziq5bqc6LKd5aGa5biC5LiJ44OE5p2-77yR77yT77yT77yT!5e0!3m2!1sja!2sjp!4v1650092509534!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div><!-- /.p-map__iframe -->
+  </div><!-- /.p-map -->
+  
+
  <%- include('./common/_footer') %>
   </body>
 </html>

@@ -1,0 +1,127 @@
+@use 'global' as * ; 
+
+.p-case{
+  padding: rem(50) 0;
+  background: linear-gradient(to left, transparent 70%,  $color-back 70%);
+  
+  @include mq(tab) {
+    padding: rem(120) 0;
+    
+  }
+}
+
+.p-case__sub-title{
+  margin-top: rem(5);
+  font-size: rem(20);
+  text-align: center;
+  
+  @include mq(tab) {
+    font-size: rem(30);
+    text-align: left;
+  }
+}
+
+.p-case__contents{
+  margin-top: rem(40);
+  
+  @include mq(tab) {
+    margin-top: rem(80);
+    
+  }
+  
+}
+
+.p-case__content + .p-case__content{
+  margin-top: rem(50);
+  
+  @include mq(tab) {
+    margin-top: rem(80);
+    
+  }
+}
+.p-case__content-title{
+  display: inline-block;
+  font-size: rem(20);
+  padding: rem(5) 0;
+  width: 100%;
+  text-align: center;
+  background-color: $color-accent;
+  color: $white;
+  
+  @include mq(tab) {
+    width: rem(354);
+    font-size: rem(25);
+    padding: rem(24) 0;
+    
+  }
+
+}
+.p-case__content-items{
+  margin-top: rem(10);
+  display: flex;
+  justify-content: center;
+  
+  @include mq(tab) {
+    margin-top: rem(25);
+    
+  }
+}
+.p-case__content-item{
+  flex: 0 1 rem(435);
+}
+
+.p-case__content-item + .p-case__content-item {
+  
+  @include mq(tab) {
+    margin-left: rem(30);
+    
+  }
+}
+
+.p-case__content-item-img {
+  width: 100%;
+  position: relative;
+  
+  }
+  
+  .p-case__content-item-img::before {
+    padding-top: calc(272 / 435) * 100%; //画像縦 / 横
+    display: block;
+    content: "";
+  
+  }
+  
+  .p-case__content-item-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+.p-case__content-item-text{
+  font-size: rem(20);
+  padding: rem(5) 0;
+  text-align: center;
+  color: $white;
+  background-color: $color-main;
+  border: 5px solid $color-main;
+
+  
+  @include mq(tab) {
+    font-size: rem(35);
+    padding: rem(22) 0;
+    
+  }
+}
+
+.p-case__content-item:nth-child(2) {
+  .p-case__content-item-text{
+    color: $color-main;
+    background-color: $white;
+    border: 5px solid $color-main;
+
+  }
+}

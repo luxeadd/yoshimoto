@@ -1,8 +1,5 @@
 @use 'global' as * ; 
 
-.p-header-menu {
- 
-}
 
 .p-header-menu__items {
   display: flex;
@@ -36,8 +33,6 @@ height: inherit;
     height: rem(30);
     
   }
-  
-
 }
 
 .p-header-menu__item a {
@@ -51,8 +46,6 @@ height: inherit;
   padding:  0 rem(15);
   
   @include mq(tab) {
-    padding:  0 rem(38);
-    
+    padding:  0 rem(38); 
   }
-
 }

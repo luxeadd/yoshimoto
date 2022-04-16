@@ -1,0 +1,19 @@
+@use 'global' as * ; 
+
+.p-section-title {
+  display: inline-block;
+  font-size: rem(30);
+  font-weight: $bold;
+  line-height: 1;
+  padding-bottom: rem(5);
+  width: rem(200);
+  border-bottom: 2px solid $color-accent;
+  
+  @include mq(tab) {
+    font-size: rem(40);
+    width: rem(327);
+    border-bottom: 5px solid $color-accent;
+    padding-bottom: rem(10);
+    
+  }
+}

@@ -1,7 +1,9 @@
+@use 'global' as * ; 
 .l-sp-contact {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  
+  z-index: $z-index-header;
+  background-color: $white;
 }
