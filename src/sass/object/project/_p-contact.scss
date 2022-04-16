@@ -1,0 +1,52 @@
+@use 'global' as * ; 
+
+.p-contact {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ @include mq(tab) {
+   display: block;
+ }
+
+}
+
+.p-contact__text {
+  font-size: rem(16);
+  
+  @include mq(tab) {
+    font-size: rem(30);
+    
+  }
+}
+
+.p-contact__tel {
+  
+}
+
+.p-contact__tel a {
+  align-items: center;
+  display: flex;
+  margin-left: rem(10);
+  @include mq(tab) {
+    
+  }
+}
+
+.p-contact__img{
+  width: rem(25);
+  
+  @include mq(tab) {
+    width: rem(37);
+  }
+}
+
+.p-contact__tel-number{
+  font-size: rem(20);
+  font-weight: $bold;
+  margin-left: rem(5);
+  
+  @include mq(tab) {
+    font-size: rem(35);
+    
+  }
+}

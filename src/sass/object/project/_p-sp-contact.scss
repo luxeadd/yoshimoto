@@ -1,0 +1,9 @@
+@use 'global' as * ; 
+
+.p-sp-contact {
+   border-top: 1px solid $color-main;
+   padding: rem(5);
+  @include mq(tab) {
+    display: none;
+  }
+}

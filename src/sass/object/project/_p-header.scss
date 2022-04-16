@@ -2,7 +2,7 @@
 
 .p-header {
   height: rem(81);
-  background: rgba($color: #111111, $alpha: 0.5);
+  background: $white;
   
   @include mq(tab) {
    height: rem(134);
