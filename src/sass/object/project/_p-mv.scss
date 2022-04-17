@@ -14,15 +14,16 @@
 }
 .p-mv__content{
   position: absolute;
-  right: calc(90 / 1280) * 100vw;
+  right: calc(70 / 1280) * 100vw;
   bottom: 30%;
   background: rgba($color: $white, $alpha: 0.9);
   border-radius: rem(90);
   padding: rem(10) rem(30);
-  
+  color: #000;
   z-index: 10;
   
   @include mq(tab) {
+    right: calc(90 / 1280) * 100vw;
     padding: rem(27) rem(60);
     bottom: calc(206 / 1280) * 100vh;
     
@@ -30,7 +31,7 @@
 
 }
 .p-mv__text{ 
-  font-size: rem(25);
+  font-size: rem(28);
   font-weight: $bold;
   
   @include mq(tab) {
