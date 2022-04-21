@@ -28,13 +28,14 @@
   <link rel="icon" href="./images/common/logo.svg" />
   <!-- クローラー -->
   <meta name="robots" content="noindex">
-  <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css" />
   <!-- swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- swiper -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script defer src="./js/script.js"></script>
 </head>
 <body>
@@ -95,21 +96,21 @@
   <div class="p-mv js-mv">
     <div class="p-mv__img">
       <!-- ここでwidth heightを設定しておくこと -->
-      <div class="swiper p-mv-slider js-mv-slider">
+      <div class="swiper p-mv__swiper  js-mv-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide p-mv__slider">
             <picture>
               <source srcset="./images/common/mv.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
               <img src="./images/common/mv-sp.jpg" alt="MV画像">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide p-mv__slider">
             <picture>
               <source srcset="./images/common/mv2.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
               <img src="./images/common/mv2-sp.jpg" alt="MV画像">
             </picture>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide p-mv__slider">
             <picture>
               <source srcset="./images/common/mv3.jpg" media="(min-width: 768px)" /><!-- 幅768px以上なら表示 -->
               <img src="./images/common/mv3-sp.jpg" alt="MV画像">
