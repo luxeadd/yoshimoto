@@ -8,7 +8,7 @@
 .p-about::after {
   content: "";
   display: block;
-  width: calc(990 / 1280) * 100vw;
+  width: calc(850 / 1280) * 100vw;
   height: 100%;
   background: url(../images/common/about-back.jpg) no-repeat center center / cover;
   position: absolute;

@@ -90,7 +90,12 @@
     content: "";
   
   }
+  .p-case__content-item-img.is-long::before {
+    padding-top: calc(600 / 435) * 100%; //画像縦 / 横
+    display: block;
+    content: "";
   
+  }
   .p-case__content-item-img img {
     position: absolute;
     top: 50%;
